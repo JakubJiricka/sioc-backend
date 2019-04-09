@@ -1,0 +1,64 @@
+{
+  "name": "sioc-be",
+  "version": "0.0.1",
+  "description": "SIOC BackEnd",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "gulp dev",
+    "test": "gulp test",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "idees",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "bluebird": "3.5.1",
+    "body-parser": "1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^1.3.2",
+    "cors": "2.8.4",
+    "dotenv": "5.0.1",
+    "express": "4.16.3",
+    "http-status-codes": "1.3.0",
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "4.17.5",
+    "moment": "2.21.0",
+    "mongoose": "5.0.10",
+    "morgan": "1.9.0",
+    "node-custom-errors": "0.1.6",
+    "node-friendly-response": "3.1.4",
+    "nodemon": "^1.18.3",
+    "request": "^2.85.0",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "del": "^3.0.0",
+    "eslint": "^4.19.0",
+    "eslint-plugin-lodash": "^2.7.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "gulp": "3.9.1",
+    "gulp-eslint": "4.0.2",
+    "gulp-istanbul": "1.1.3",
+    "gulp-json-editor": "^2.2.2",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-mocha": "5.0.0",
+    "gulp-nodemon": "2.2.1",
+    "husky": "^0.14.3",
+    "should": "13.2.1",
+    "sinon": "4.4.6",
+    "superagent": "3.8.2",
+    "supertest": "3.0.0"
+  }
+}

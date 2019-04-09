@@ -1,0 +1,4 @@
+● mongod.service - High-performance, schema-free document-oriented database
+   Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+   Active: inactive (dead)
+     Docs: https://docs.mongodb.org/manual

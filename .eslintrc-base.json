@@ -1,0 +1,57 @@
+{
+  "plugins": [
+    "lodash"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:lodash/recommended"
+  ],
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "eol-last": [
+      "error"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "prefer-const": [
+      "error"
+    ],
+    "lodash/import-scope": [
+      "error",
+      "member"
+    ],
+    "lodash/prop-shorthand": [
+      "error",
+      "never"
+    ],
+    "lodash/matches-prop-shorthand": [
+      "error",
+      "never"
+    ]
+  }
+}

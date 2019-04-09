@@ -1,0 +1,50 @@
+image: node:8.10.0-alpine
+cache:
+  key: "alpine"
+  paths:
+    - node_modules/
+
+stages:
+  - test
+  - build
+  - production
+
+before_script:
+  - apk update && apk add git
+  - git --version
+
+test:
+  script:
+    - npm install
+    - npm test
+  tags:
+    - docker
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - dist/
+  script:
+    - npm install
+    - npm run build
+  only:
+    - master
+  tags:
+    - docker
+
+production:
+  stage: production
+  script:
+      - git config --global user.email "sioc@sioc.com"
+      - git config --global user.name "Sioc"
+      - rm -rf .git
+      - git init
+      - git add .
+      - git commit -m "RELEASE"
+      - git remote add heroku https://heroku:519b10aa-1cc0-41ca-bbd2-516c6924bfa3@git.heroku.com/sioc-be-test.git
+      - git push -u --force heroku master
+  tags:
+    - docker
+  only:
+    - master

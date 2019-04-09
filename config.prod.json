@@ -1,0 +1,51 @@
+{
+  "mode": "production",
+  "crypto": {
+    "key": "R3YNv2P3IKnvg59z3FJziX0zDt0UMp6m",
+    "iv": "mfiU44N5sG5R96LK",
+    "encoding": "base64"
+  },
+  "server": {
+    "port": 6720,
+    "request": {
+      "bodyParser": {
+        "extended": true
+      }
+    }
+  },
+  "connectionStrings": {
+    "app": ""
+  },
+  "email": {
+    "host": "",
+    "username": "",
+    "password": ""
+  },
+  "winston": {
+    "mongodb": {
+      "level": "error",
+      "db": "",
+      "capped": true,
+      "handleExceptions": true
+    },
+    "mail": {
+      "level": "error",
+      "from": "",
+      "to": "",
+      "host": "",
+      "username": "",
+      "password": "",
+      "subject": "",
+      "html": true,
+      "handleExceptions": true
+    }
+  },
+  "recaptcha": {
+    "url": "",
+    "secret": ""
+  },
+  "confirmEmail": {
+    "tokenType": "confirmEmail",
+    "tokenTtl": 7200000
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "mode": "development",
+  "crypto": {
+    "key": "0xMY085p7KD0Kf7siepi26OPFYLWnX9t",
+    "iv": "077NLgyjM9Me3K5d",
+    "encoding": "base64"
+  },
+  "server": {
+    "port": 6720,
+    "request": {
+      "bodyParser": {
+        "extended": true
+      }
+    }
+  },
+  "connectionStrings": {
+    "app": "mongodb://admin:admin@ds119129.mlab.com:19129/sioc"
+  },
+  "auth": {
+    "sessionSecret": "bL74qbmzjHAPM6pTE98lQiXeaGCUtaPV",
+    "masterKey": "pass"
+  },
+  "email": {
+    "host": "",
+    "username": "",
+    "password": ""
+  },
+  "winston": {
+    "mongodb": {
+      "silent": true,
+      "level": "error",
+      "db": "",
+      "capped": true,
+      "handleExceptions": true
+    },
+    "mail": {
+      "silent": true,
+      "level": "error",
+      "from": "",
+      "to": "",
+      "host": "1",
+      "username": "",
+      "password": "",
+      "subject": "",
+      "html": true,
+      "handleExceptions": true
+    }
+  },
+  "recaptcha": {
+    "url": "",
+    "secret": ""
+  },
+  "confirmEmail": {
+    "tokenType": "confirmEmailDev",
+    "tokenTtl": 14400000
+  }
+}
